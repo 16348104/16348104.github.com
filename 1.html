@@ -10,19 +10,25 @@
             <td>
     <span div id="zhu">
     <form action="" method="post"><br />
-        用户名：<input type="text" name="user" placeholder="请输入您的用户名!" required="required"><br>
+        用户名：<input type="text" name="user" placeholder="请输入您的用户名" required><br>
         <br>
-        密码：<input name="pass" type="password" placeholder="密码长度至少为8位" required="required"><br>
+        密码：<input name="pass" type="password" placeholder="密码长度至少为8位" required><br>
         <br>
-
-        E-mail：<input type="email" name="email" required="required"><br>
+        E-mail：<input type="email" list="email_list" name="email" required>
+       <datalist id="email_list">
+        <option label="163" value="@163.com"/>
+        <option label="google"
+ value="@gmail.com"/>
+ <option label="sina" value="@sina.com"/>
+ 
+ </datalist>    
         <br>
-
-        联系电话：<input name="" type="telephone" required="required"><br>
         <br>
-        出生日期：<input type="date" name="date"><br/><br/>
-        性别:
-        <input name="sex" type="radio" value="男" checked="checked">男<br>
+        联系电话：<input name="" type="tel" required><br>
+        <br>
+        出生日期：<input type="date" name="date" value=""><br/><br/>
+        性别:<br>
+        <input name="sex" type="radio" value="男" checked="checked">男
         <input name="sex" type="radio" value="女">女<br>
         <br>
 
@@ -42,17 +48,17 @@
             <option value="博士后">博士后</option>
         </select>
         <br><br>
-        留言: <textarea name="" id="" maxlength="100" cols="40" rows="10"></textarea><br/><br/>
+        留言: <textarea name="" id="" maxlength="100" cols="40" rows="8"></textarea><br/><br/>
         <input type="submit" name=""value="提交">&nbsp;&nbsp;
-        <input  type="reset" name="" value="重置"><br/><br/>
+        <input  type="reset" name="" value="重置"><br/>
     </form>
         </span>
             </td>
         </tr>
         <tr valign="bottom">
             <td>
-                <b style=" color: #ff50">注册后可以发表评论!</b><br/><br/>
-                <pre>&copyCopyright W3c.com.cn <!-- #BeginDate format:IS1 -->2015-09-03<!-- #EndDate --></pre>
+                <b style=" color: #ff50">注册后可以发表评论!</b><br/>
+                <pre>&copyCopyright W3c.com.cn <!-- #BeginDate format:IS1 -->2015-09-05<!-- #EndDate --></pre>
             </td>
         </tr>
     </table>
