@@ -1,31 +1,27 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-<meta charset="utf-8">
     <head>
         <meta charset="utf-8">
         <title>注册</title>
     </head>
     <body style="font-size:14px;font-family:Arial,Helvetica,sans-serif;color:#46626F;background-color:#EEEEEE">
-    <table width="200" border="0" align="center">
+    <table width="300" border="0" align="center">
         <tr>
-            <td width="200">
+            <td>
     <span div id="zhu">
     <form action="" method="post"><br />
-        <br />
-
-        用户名：<input type="text" name="user" value="请输入用户名"><br>
+        用户名：<input type="text" name="user" placeholder="请输入您的用户名!" required="required"><br>
         <br>
-        密码：<input name="pass" type="password" value=""><br>
+        密码：<input name="pass" type="password" placeholder="密码长度至少为8位" required="required"><br>
         <br>
 
-        E-mail：<input name="email" type="text"><br>
+        E-mail：<input type="email" name="email" required="required"><br>
         <br>
 
-        联系电话：<input name="" type="text"><br>
+        联系电话：<input name="" type="telephone" required="required"><br>
         <br>
-
-        性别：<br>
+        出生日期：<input type="date" name="date"><br/><br/>
+        性别:
         <input name="sex" type="radio" value="男" checked="checked">男<wbr>
         <input name="sex" type="radio" value="女" >女<br>
         <br>
@@ -38,24 +34,23 @@
         <input name="xueli" type="checkbox" value="旅游">旅游
         <br><br>
         学历：<br>
-        <select name="" multiple value="">
+        <select name="" multiple value="" required="required">
             <option value="高中">高中</option>
             <option value="本科" selected="selected">本科</option>
             <option value="研究生">研究生</option>
             <option value="博士">博士</option>
             <option value="博士后">博士后</option>
         </select>
-        <br><br><br/>
+        <br><br>
+        留言: <textarea name="" id="" maxlength="100" cols="40" rows="10"></textarea><br/><br/>
         <input type="submit" name=""value="提交">&nbsp;&nbsp;
-        <input name="" type="reset" value="重置"><br/><br/>
+        <input  type="reset" name="" value="重置"><br/><br/>
     </form>
             </td>
         </tr>
         <tr valign="bottom">
             <td>
-                <wbr />
-                <wbr/>
-                <b style=" color: #ff50">注册后可以发表评论!</b><br/><br/><br/><br/>
+                <b style=" color: #ff50">注册后可以发表评论!</b><br/><br/>
                 <pre>&copyCopyright W3c.com.cn <!-- #BeginDate format:IS1 -->2015-09-03<!-- #EndDate --></pre>
             </td>
         </tr>
