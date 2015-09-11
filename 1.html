@@ -7,14 +7,16 @@
     <body style="font-size:14px;font-family:Arial,Helvetica,sans-serif;color:#46626F;background-color:#f3f3f3">
     <table width="300" border="0" align="center">
         <tr>
+            <td height="100"> <h2><style=" color: #ff50">注册后可以发表评论!</h2></td>
+        </tr>
+        <tr>
             <td>
     <span div id="zhu">
-    <form action="" method="post"><br />
-        用户名：<input type="text" name="user" placeholder="请输入您的用户名" required><br>
+        用户名：<input type="text" name="user" placeholder="请输入您的用户名" required="required"><br>
         <br>
-        密码：<input name="pass" type="password" placeholder="密码长度至少为8位" required><br>
+        密码：<input name="pass" type="password" placeholder="密码长度至少为8位" required="required"><br>
         <br>
-        E-mail：<input type="email" list="email_list" name="email" required>
+        E-mail：<input type="email" list="email_list" name="email" required="required">
        <datalist id="email_list">
         <option label="163" value="@163.com"/>
         <option label="google"
@@ -24,7 +26,7 @@
  </datalist>    
         <br>
         <br>
-        联系电话：<input name="" type="tel" required><br>
+        联系电话：<input name="" type="tel" required="required"><br>
         <br>
         出生日期：<input type="date" name="date" value=""><br/><br/>
         性别:<br>
@@ -48,8 +50,15 @@
             <option value="博士后">博士后</option>
         </select>
         <br><br>
-        留言: <textarea name="" id="" maxlength="100" cols="40" rows="8"></textarea><br/><br/>
-        <input type="submit" name=""value="提交">&nbsp;&nbsp;
+        职业：<br/>
+        <select> name="" id="">
+        <option value="IT1">程序员</option>
+        <option value="IT2">产品经理</option>
+        <option value="IT3">项目经理</option>
+        <option value="IT4">其他</option>
+        </select>
+        <br/><br/>
+        <input type="submit" name=""value="提交" onclick="alert('注册已成功，可以发表评论！')">&nbsp;&nbsp;
         <input  type="reset" name="" value="重置"><br/>
     </form>
         </span>
@@ -57,8 +66,9 @@
         </tr>
         <tr valign="bottom">
             <td>
-                <b style=" color: #ff50">注册后可以发表评论!</b><br/>
-                <pre>&copyCopyright W3c.com.cn <!-- #BeginDate format:IS1 -->2015-09-05<!-- #EndDate --></pre>
+                <br/><br/>
+                <a href="2.html">去评论</a>
+                <pre>&copyCopyright w3c.com.cn <!-- #BeginDate format:IS1 -->2015-09-11<!-- #EndDate --></pre>
             </td>
         </tr>
     </table>
