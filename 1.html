@@ -3,27 +3,60 @@
     <head>
         <meta charset="utf-8">
         <title>注册</title>
+        <style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                font-size:16px;
+                font-family:Arial, Helvetica, sans-serif;
+                color:#46626F;
+            }
+            div#container
+            {
+                width:100%;
+                margin:auto;
+                border:gray;
+            }
+            div#header,div#footer
+            {
+                padding:0.5em;
+                color:white;
+                background-color:gray;
+                clear:left;
+                width:auto;
+                text-align:center
+            }
+            #content {
+                width:100%;
+                text-align-all:center;
+                line-height:150%;
+            }
+            h1.header
+            {
+                padding:0;
+                margin:auto;
+            }
+        </style>
     </head>
-    <body style="font-size:14px;font-family:Arial,Helvetica,sans-serif;color:#46626F;background-color:#f3f3f3">
-    <table width="300" border="0" align="center">
-        <tr>
-            <td height="100"> <h2><style=" color: #ff50">注册后可以发表评论!</h2></td>
-        </tr>
-        <tr>
-            <td>
-    <span div id="zhu">
-        <form>
-        用户名：<input type="text" name="user" placeholder="请输入您的用户名" required="required"><br>
+    <body>
+    <div id="container">
+        <div id="header">
+            <h1 class="header"><h2>注册后可以发表评论!</h2>
+        </div>
+            <!--<h2><style=" color: #ff50"></h2>-->
+        <form id="content">
+        用户名：<input type="text" name="user" placeholder="请输入您的用户名" required="required" m><br>
         <br>
         密码：<input name="pass" type="password" placeholder="密码长度至少为8位" required="required"><br>
         <br>
         E-mail：<input type="email" list="email_list" name="email" required="required">
        <datalist id="email_list">
-        <option label="163" value="@163.com"/>
-        <option label="google" value="@gmail.com"/>
- <option label="sina" value="@sina.com"/>
- 
- </datalist>    
+         <option label="163" value="@163.com"/>
+         <option label="google" value="@gmail.com"/>
+         <option label="sina" value="@sina.com"/>
+       </datalist>
         <br>
         <br>
         联系电话：<input name="" type="tel" required="required"><br>
@@ -32,10 +65,8 @@
         性别:<br>
         <input name="sex" type="radio" value="男" checked="checked">男
         <input name="sex" type="radio" value="女">女<br>
-        <br>
 
         个人爱好：<br>
-
         <input name="xueli" type="checkbox" value="上网">上网
         <input name="xueli" type="checkbox" value="读书">读书
         <input name="xueli" type="checkbox" value="健身">健身
@@ -58,21 +89,15 @@
         <option value="IT4">其他</option>
         </select>
         <br/><br/>
-        <input type="submit" name=""value="提交" onclick="alert('注册已成功！')">&nbsp;&nbsp;
+        <input type="submit" name=""value="提交" onclick="alert('注册成功！')">&nbsp;&nbsp;
         <input  type="reset" name="" value="重置"><br/>
-    </form>
-        </span>
-            </td>
-        </tr>
-        <tr valign="bottom">
-            <td>
-                <br/><br/>
-                <a href="2.html">去评论</a>
-                <pre>&copyCopyright w3c.com.cn <!-- #BeginDate format:IS1 -->2015-09-11<!-- #EndDate --></pre>
-            </td>
-        </tr>
-    </table>
-    </span>
+        </form>
+        <br/><br/>
+         <div id="footer">
+             <a href="2.html">去评论</a>
+            <p>&copyCopyright w3c.com.cn <!-- #BeginDate format:IS1 -->2015-09-11<!-- #EndDate --></p>
+         </div>
+    </div>
     </body>
     </html>
 
