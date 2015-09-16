@@ -1,59 +1,95 @@
 <!DOCTYPE html>
 <meta charset="utf-8"/>
 <title>个人主页</title>
-<body style="font-size:14px; font-family:Arial, Helvetica, sans-serif; color:#46626F;">
-<table width="900" height="750" border="0" align="center">
-  <tr>
-    <td height="100" colspan="2" style="background-color:#A4C1C1; text-align:center"><h1>欢迎进入个人主页</h1></td>
-  </tr>
-  <tr valign="top">
-    <td width="250" height="450" style="background-color:#ffff99;width:100px;text-align:justify">
-    <details open>
-	<summary>HTML的发展历史</summary>
-    <hr>
+<head>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-size:16px;
+            font-family:Arial, Helvetica, sans-serif;
+            color:#46626F;
+        }
+        div#container
+        {
+            width:100%;
+            margin:auto;
+            border:gray;
+            line-height:150%;
+        }
+        div#header,div#footer
+        {
+            padding:0.5em;
+            color:white;
+            background-color:gray;
+            clear:left;
+            width:auto;
+            text-align:center
+        }
+        h1.header
+        {
+            padding:0;
+            margin:auto;
+        }
+        div#left
+        {
+            float:left;
+            width:150px;
+            padding:1em;
+            background-color:#ffff99;
+            text-align:left;
+        }
+        div#content
+        {
+            margin-left:190px;
+            padding:1em;
+            background-color:#f3f3f3;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <h1 class="header"><h1>欢迎进入个人主页</h1></div>
+    <div id="left"><details open>
+        <summary>HTML的发展历史</summary>
+        <hr>
         <ul>
-          <li>W3C</li>
-          <li>HTML 1</li>
-          <li>HTML 2</li>
-		  <li>HTML 3.2</li>
-		  <li>HTML 4.01</li>
-		  <li>HTML 5.0</li>
+            <li>W3C</li>
+            <li>HTML 1</li>
+            <li>HTML 2</li>
+            <li>HTML 3.2</li>
+            <li>HTML 4.01</li>
+            <li>HTML 5.0</li>
         </ul>
-     </details>
+    </details>
         <br/>
         <br/>
         <details open>
-		<summary>CSS</summary>
-        <hr>
-		<ul>
-		<li>CSSS 1.0</li>
-		<li>CSS 2.0</li>
-		<li>CSS 3.0</li>
-		</ul>
+            <summary>CSS</summary>
+            <hr>
+            <ul>
+                <li>CSSS 1.0</li>
+                <li>CSS 2.0</li>
+                <li>CSS 3.0</li>
+            </ul>
         </details>
-		</td>
-    <td width="400" style="background-color:#EEEEEE;text-align: left;">
-	<img src="images/cup.gif" align="middle" width="128"; height="128"/>
-      <dt>
+    </div>
+    <div id="content">
+        <img src="images/cup.gif" width="128"; height="128"/>
         <h3>浅谈互联网发展的起源</h3>
-      </dt>
-      <article>
-      <h4>第1阶段</h4>
-      <dd>1969年，为了保障通信联络，美国国防部高级研究计划署ARPA资助建立了世界上第一个分组交换试验网ARPANET，连接美国四个大学。<mark>ARPANET</mark>的建成和不断发展标志着计算机网络发展的新纪元。
-        <br />
-      </dd>
-	  <h4>第2阶段</h4>
-      <dd>20世纪70年代末到80年代初，计算机网络蓬勃发展，各种各样的计算机网络应运而生，如MILNET、USENET、BITNET、CSNET等，在网络的规模 和数量上都得到了很大的发展。一系列网络的建设，产生了不同网络之间互联的需求，并最终导致了<mark>TCP/IP协议</mark>的诞生。<br />
-	  </dd>
-      </article>
-    </td>
-  </tr>
-  <tr>
-    <td height="100" colspan="2"style="background-color:#99bbbb; text-align:center"><a href="1.html#zhu">发表评论</a>
-        <pre>&copyCopyright W3c.com.cn <!-- #BeginDate format:IS1 -->2015-09-11<!-- #EndDate -->
-  </pre>
-    </td>
-  </tr>
-</table>
+        <article>
+            <h4>第1阶段</h4>
+            1969年，为了保障通信联络，美国国防部高级研究计划署ARPA资助建立了世界上第一个分组交换试验网ARPANET，连接美国四个大学。<mark>ARPANET</mark>的建成和不断发展标志着计算机网络发展的新纪元。
+            <h3>第2阶段</h3>
+            20世纪70年代末到80年代初，计算机网络蓬勃发展，各种各样的计算机网络应运而生，如MILNET、USENET、BITNET、CSNET等，在网络的规模 和数量上都得到了很大的发展。一系列网络的建设，产生了不同网络之间互联的需求，并最终导致了<mark>TCP/IP协议</mark>的诞生。
+        </article></div>
+    <div id="footer">
+        <a href="1.html>发表评论</a>
+        <p>&copyCopyright W3c.com.cn</p> <!-- #BeginDate format:IS1 -->2015-09-16<!-- #EndDate -->
+    </div>
+</div>
 </body>
 </html>
