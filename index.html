@@ -12,6 +12,37 @@
             font-family:Arial, Helvetica, sans-serif;
             color:#46626F;
         }
+        }
+        a:link{							/* 超链接正常状态下的样式 */
+            color:#005799;				/* 深蓝 */
+            text-decoration: none;		/* 无下划线 */
+        }
+        a:visited{						/* 访问过的超链接 */
+            color:#000000;				/* 黑色 */
+            text-decoration: none;	/* 无下划线 */
+        }
+        a:hover{						/* 鼠标经过时的超链接 */
+            color: #ff5a5a;				/* 黄色 */
+            text-decoration: none;	/* 下划线 */
+        }
+        img {
+            float: left;
+
+        }
+        ul
+        {
+            list-style-type:none;
+            margin:0;
+            padding:0;
+        }
+        summary {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #369;
+            padding: 4px;
+            background-color: #f3f3f3;
+            border-bottom: 3px solid #aaa;
+        }
         div#container
         {
             width:100%;
@@ -53,27 +84,28 @@
 <div id="container">
     <div id="header">
         <h1 class="header"><h1>欢迎进入个人主页</h1></div>
-    <div id="left"><details open>
+    <div id="left">
+        <details open>
         <summary>HTML的发展历史</summary>
         <hr>
         <ul>
-            <li>W3C</li>
-            <li>HTML 1</li>
-            <li>HTML 2</li>
-            <li>HTML 3.2</li>
-            <li>HTML 4.01</li>
-            <li>HTML 5.0</li>
+            <li><a href="#">W3C</a></li>
+            <li><a href="#">HTML 1</a></li>
+            <li><a href="#">HTML 2</a></li>
+            <li><a href="#">HTML 3.0</a></li>
+            <li><a href="#">HTML 4.01</a></li>
+            <li><a href="#">HTML 5.0</a></li>
         </ul>
-    </details>
+        </details>
         <br/>
         <br/>
         <details open>
             <summary>CSS</summary>
             <hr>
             <ul>
-                <li>CSSS 1.0</li>
-                <li>CSS 2.0</li>
-                <li>CSS 3.0</li>
+                <li><a href="#">CSS 1.0</a></li>
+                <li><a href="#">CSS 2.0</a></li>
+                <li><a href="#">CSS 3.0</a></li>
             </ul>
         </details>
     </div>
@@ -87,7 +119,7 @@
             20世纪70年代末到80年代初，计算机网络蓬勃发展，各种各样的计算机网络应运而生，如MILNET、USENET、BITNET、CSNET等，在网络的规模 和数量上都得到了很大的发展。一系列网络的建设，产生了不同网络之间互联的需求，并最终导致了<mark>TCP/IP协议</mark>的诞生。
         </article></div>
     <div id="footer">
-        <a href="1.html>发表评论</a>
+        <a href="1.html">发表评论</a>
         <p>&copyCopyright W3c.com.cn</p> <!-- #BeginDate format:IS1 -->2015-09-16<!-- #EndDate -->
     </div>
 </div>
