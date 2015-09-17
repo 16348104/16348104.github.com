@@ -27,7 +27,6 @@
         }
         img {
             float: left;
-
         }
         ul
         {
@@ -43,20 +42,29 @@
             background-color: #f3f3f3;
             border-bottom: 3px solid #aaa;
         }
+        .clear{
+            clear: both;
+        }
         div#container
         {
-            width:500px;
+            width: 650px;;
             margin:auto;
             line-height:150%;
         }
-        div#header,div#footer
+        div#header
         {
             padding:0.5em;
             color:white;
-            background-color:#99bbb;
-            clear:left;
-            width:auto;
-            text-align:center
+            background-color:#99bbbb;
+            text-align:center;
+            /*height: 100px;*/
+        }
+        div#footer{
+            padding:0.5em;
+            color:white;
+            background-color:#99bbbb;
+            text-align:center;
+            /*height: 100px;*/
         }
         h1.header
         {
@@ -67,26 +75,31 @@
         {
             float:left;
             width:150px;
-            height:200px;
+            height:350px;
             padding:1em;
             background-color:#ffff99;
             text-align:left;
         }
+        div#right {
+            float: left;
+            width: 450px;
+            height: 350px;
+            padding: 1em;
+            background-color: #EEEEEE;
+        }
         div#content
         {
-            width:350px;
-            height:200px;
-            margin-left:190px;
-            padding:1em;
-            background-color:#EEEEEE;
+           background: white;
         }
     </style>
 </head>
 <body>
 <div id="container">
     <div id="header">
-        <h1 class="header"><h1>欢迎进入个人主页</h1></div>
-    <div id="left">
+        <h1 class="header">欢迎进入个人主页</h1>
+    </div>
+    <div id="content">
+        <div id="left">
         <details open>
         <summary>HTML的发展历史</summary>
         <ul>
@@ -98,8 +111,6 @@
             <li><a href="#">HTML 5.0</a></li>
         </ul>
         </details>
-        <br/>
-        <br/>
         <details open>
             <summary>CSS</summary>
             <ul>
@@ -109,7 +120,7 @@
             </ul>
         </details>
     </div>
-    <div id="content">
+        <div id="right">
         <img src="images/cup.gif" width="128"; height="128"/>
         <h3>浅谈互联网发展的起源</h3>
         <article>
@@ -117,7 +128,10 @@
             1969年，为了保障通信联络，美国国防部高级研究计划署ARPA资助建立了世界上第一个分组交换试验网ARPANET，连接美国四个大学。<mark>ARPANET</mark>的建成和不断发展标志着计算机网络发展的新纪元。
             <h4>第2阶段</h4>
             20世纪70年代末到80年代初，计算机网络蓬勃发展，各种各样的计算机网络应运而生，如MILNET、USENET、BITNET、CSNET等，在网络的规模 和数量上都得到了很大的发展。一系列网络的建设，产生了不同网络之间互联的需求，并最终导致了<mark>TCP/IP协议</mark>的诞生。
-        </article></div>
+        </article>
+     </div>
+        <div class="clear"></div>
+    </div>
     <div id="footer">
         <a href="1.html">发表评论</a>
         <p>&copyCopyright W3c.com.cn</p> <!-- #BeginDate format:IS1 -->2015-09-16<!-- #EndDate -->

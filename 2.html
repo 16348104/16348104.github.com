@@ -3,21 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <title>评论</title>
+    <style type="text/css">
+        form {
+            border: 1px;
+            dottd #AAAAAA;
+            padding: 3px 6px 3px 6px;
+            margin: 0;
+            font: 14px Arial;
+        }
+        input {
+            color: #00008B;
+            background-color: #ADD8E6;
+            border: 1px solid #00008B;
+        }
+        select {
+            width: 80px;
+            color: #00008B;
+            background-color: #ADD8E6;
+            border: 1px solid #00008B;
+        }
+        textarea {
+            width: 200px;
+            hegiht: 40px;
+            color: #00008B;
+            background-color: #ADD8E6;
+            border: 1px solid #00008B;
+        }
+        input.txt {
+            border: 1px inset #00008B;
+            background-color: #ADD8E6;
+        }
+        input.btn{
+            color: #00008B;
+            background-color: #ADD8E6;
+            border: 1px outset #00008B;
+            padding: 1px 2px 1px 2px;
+        }
+        div#container
+        {
+            width: 650px;
+            margin:auto;
+            line-height:150%;
+        }
+        body {
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #46626F;
+            background-color: #f3f3f3;
+        }
+    </style>
 </head>
-<body style="font-size:14px;font-family:Arial,Helvetica,sans-serif;color:#46626F;background-color:#f3f3f3">
-<div>
-留言: <textarea value="" onclick="this.value='评价须知:好评无法修改和删除'"name="" id="" maxlength="100"  cols="50" rows="10" style="resize: none"></textarea><br/><br/>
-<form action="" method="post">
+<body>
+<div id="container">
+<p>我要留言: <textarea  class="txt" value="" onclick="this.value='评价须知:好评无法修改和删除'" id="" maxlength="100"cols="50" rows="10" style="resize: none"></textarea></p>
+<form action="" action="" method="post">
     上传文件: <input type="file"value="晒照片" name="img" multiple="multiple"/>
-    <input type="submit" value="手机晒图"/>限5张
-    <br/><br/>
-    <input type="radio" name="name" value="公开"/>公开
-    <input type="radio" name="name" value="匿名"/>匿名
-    <br/><br/>
-    <input type="button"  name="" value="发表评论！" onclick="alert('评论已发表')">
+   <p> <input type="submit" value="手机晒图" class="txt"/>限5张</p>
+    <p><input type="radio" name="name" value="公开" class="txt"/>公开</p>
+   <p> <input type="radio" name="name" value="匿名" class="txt"/>匿名</p>
+   <p> <input type="button"  name="" value="发表评论！" onclick="alert('感谢您的评论！')" class="btn"></p>
 </form>
-    <br/>
-    <pre>&copyCopyright w3c.com.cn  <!-- #BeginDate format:IS1 -->2015-09-16<!-- #EndDate --></pre>
+    <p>&copyCopyright w3c.com.cn  <!-- #BeginDate format:IS1 -->2015-09-16<!-- #EndDate --></p>
     </div>
 </body>
 </html>

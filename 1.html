@@ -14,11 +14,52 @@
                 color:#46626F;
                 background-color:#f3f3f3
             }
+            form {
+                border: 1px;
+                dottd #AAAAAA;
+                padding: 3px 6px 3px 6px;
+                margin: 0;
+                font: 14px Arial;
+            }
+            input {
+                color: #00008B;
+                background-color: #ADD8E6;
+                border: 1px solid #00008B;
+            }
+            select {
+                width: 80px;
+                color: #00008B;
+                background-color: #ADD8E6;
+                border: 1px solid #00008B;
+            }
+            textarea {
+                width: 200px;
+                hegiht: 40px;
+                color: #00008B;
+                background-color: #ADD8E6;
+                border: 1px solid #00008B;
+            }
+            input.txt {
+                border: 1px inset #00008B;
+                background-color: #ADD8E6;
+            }
+            input.btn{
+                color: #00008B;
+                background-color: #ADD8E6;
+                border: 1px outset #00008B;
+                padding: 1px 2px 1px 2px;
+            }
+            body {
+                font-size: 14px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #46626F;
+                background-color: #f3f3f3;
+            }
+
             div#container
             {
-                width:100%;
                 margin:auto;
-                border:gray;
+                line-height:150%;
             }
             div#header,div#footer
             {
@@ -31,8 +72,9 @@
             }
             #content {
                 width:100%;
-                text-align-all:center;
+                /*text-align-all:center;*/
                 line-height:150%;
+                margin: auto;
             }
             h1.header
             {
@@ -46,8 +88,8 @@
         <div id="header">
             <h1 class="header"><h2>注册后可以发表评论!</h2>
         </div>
-            <!--<h2><style=" color: #ff50"></h2>-->
-        <form id="content">
+        <div id="content">
+        <form>
         用户名：<input type="text" name="user" placeholder="请输入您的用户名" required="required" m><br>
         <br>
         密码：<input name="pass" type="password" placeholder="密码长度至少为8位" required="required"><br>
@@ -93,7 +135,7 @@
         <input type="submit" name=""value="提交" onclick="alert('注册成功！')">&nbsp;&nbsp;
         <input  type="reset" name="" value="重置"><br/>
         </form>
-        <br/><br/>
+        </div>
          <div id="footer">
              <a href="2.html">去评论</a>
             <p>&copyCopyright w3c.com.cn  <!-- #BeginDate format:IS1 -->2015-09-16<!-- #EndDate --></p>
