@@ -7,35 +7,52 @@
             margin: 0;
             padding: 0;
         }
-        body{
-            font-size:16px;
-            font-family:Arial, Helvetica, sans-serif;
-            color:#46626F;
+
+        body {
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #46626F;
         }
+
+        a {
+            font-family: Arial;
+            text-align: center;
+            margin: 1px;
         }
-        a:link{							/* 超链接正常状态下的样式 */
-            color:#005799;				/* 深蓝 */
-            text-decoration: none;		/* 无下划线 */
+        a:link,a:visited {
+            color: #ffff99;
+            padding: 4px 10px 4px 10px;
+            background-color: #A62020;
+            text-decoration: none;
+            border-top: 1px solid #EEEEEE;
+            border-left: 1px solid #EEEEEE;
+            border-right:1px solid #717171;
+            border-bottom:1px solid #717171;
         }
-        a:visited{						/* 访问过的超链接 */
-            color:#000000;				/* 黑色 */
-            text-decoration: none;	/* 无下划线 */
+
+        /*a:visited {*/
+            /*color: #000000;*/
+            /*text-decoration: none; /!* 无下划线 *!/*/
+        /*}*/
+
+        a:hover {
+
+            text-decoration: none;
+            color: #ff5a5a;
         }
-        a:hover{						/* 鼠标经过时的超链接 */
-            color: #ff5a5a;				/* 黄色 */
-            text-decoration: none;	/* 下划线 */
-        }
+
         img {
             float: left;
         }
-        ul
-        {
-            list-style-type:none;
-            margin:0;
-            padding:0;
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
         }
+
         h2 {
-            text-shadow:gray 5px 5px 2px;
+            text-shadow: gray 5px 5px 2px;
         }
 
         summary {
@@ -46,44 +63,47 @@
             background-color: #f3f3f3;
             border-bottom: 3px solid #aaa;
         }
-        .clear{
+
+        .clear {
             clear: both;
         }
-        div#container
-        {
+
+        div#container {
             width: 100%;
-            margin:auto;
-            line-height:150%;
+            margin: 0px auto;
+            line-height: 150%;
         }
-        div#header
-        {
-            padding:0.5em;
-            color:white;
-            background-color:#99bbbb;
-            text-align:center;
-            /*height: 100px;*/
+
+        div#header {
+            padding: 0.5em;
+            color: white;
+            background-color: #99bbbb;
+            text-align: center;
+
         }
-        div#footer{
-            padding:0.5em;
-            color:white;
-            background-color:#99bbbb;
-            text-align:center;
-            /*height: 100px;*/
+
+        div#footer {
+            padding: 0.5em;
+            color: white;
+            background-color: #99bbbb;
+            text-align: center;
+
         }
-        h1.header
-        {
-            padding:0;
-            
+
+        h1.header {
+            padding: 0;
+
         }
-        div#left
-        {
-            float:left;
-            width:150px;
-            height:350px;
-            padding:1em;
-            background-color:#ffff99;
-            text-align:left;
+
+        div#left {
+            float: left;
+            width: 200px;
+            height: 350px;
+            padding: 1em;
+            background-color: #ffff99;
+            text-align: left;
         }
+
         div#right {
             float: left;
             width: 450px;
@@ -91,9 +111,11 @@
             padding: 1em;
             background-color: #EEEEEE;
         }
-        div#content
-        {
-           background: white;
+
+        div#content {
+            background: white;
+            width: 900px;
+
         }
     </style>
 </head>
@@ -104,40 +126,47 @@
     </div>
     <div id="content">
         <div id="left">
-        <details open>
-        <summary>HTML的发展历史</summary>
-        <ul>
-            <li><a href="#">W3C</a></li>
-            <li><a href="#">HTML 1</a></li>
-            <li><a href="#">HTML 2</a></li>
-            <li><a href="#">HTML 3.0</a></li>
-            <li><a href="#">HTML 4.01</a></li>
-            <li><a href="#">HTML 5.0</a></li>
-        </ul>
-        </details>
-        <details open>
-            <summary>CSS</summary>
-            <ul>
-                <li><a href="#">CSS 1.0</a></li>
-                <li><a href="#">CSS 2.0</a></li>
-                <li><a href="#">CSS 3.0</a></li>
-            </ul>
-        </details>
-    </div>
+            <details open>
+                <summary>HTML的发展历史</summary>
+                <ul>
+                    <li><a href="http://www.w3.org/">W3C</a></li>
+                    <li><a href="#">HTML 1</a></li>
+                    <li><a href="#">HTML 2</a></li>
+                    <li><a href="#">HTML 3.0</a></li>
+                    <li><a href="#">HTML 4.01</a></li>
+                    <li><a href="#">HTML 5.0</a></li>
+                </ul>
+            </details>
+            <details open>
+                <summary>CSS</summary>
+                <ul>
+                    <li><a href="csszengarden.com">CSS 1.0</a></li>
+                    <li><a href="csszengarden.com">CSS 2.0</a></li>
+                    <li><a href="csszengarden.com">CSS 3.0</a></li>
+                </ul>
+            </details>
+        </div>
         <div id="right">
-        <img src="images/cup.gif" width="128"; height="128"/>
-        <h2>浅谈互联网发展的起源</h2>
-        <article>
-            <h3>第1阶段</h3>
-            1969年，为了保障通信联络，美国国防部高级研究计划署ARPA资助建立了世界上第一个分组交换试验网ARPANET，连接美国四个大学。<mark>ARPANET</mark>的建成和不断发展标志着计算机网络发展的新纪元。
-            <h3>第2阶段</h3>
-            20世纪70年代末到80年代初，计算机网络蓬勃发展，各种各样的计算机网络应运而生，如MILNET、USENET、BITNET、CSNET等，在网络的规模 和数量上都得到了很大的发展。一系列网络的建设，产生了不同网络之间互联的需求，并最终导致了<mark>TCP/IP协议</mark>的诞生。
-        </article>
-     </div>
+            <img src="images/cup.gif" width="128" ; height="128"/>
+
+            <h2>浅谈互联网发展的起源</h2>
+            <article>
+                <h3>第1阶段</h3>
+                1969年，为了保障通信联络，美国国防部高级研究计划署ARPA资助建立了世界上第一个分组交换试验网ARPANET，连接美国四个大学。
+                <mark>ARPANET</mark>
+                的建成和不断发展标志着计算机网络发展的新纪元。
+                <h3>第2阶段</h3>
+                20世纪70年代末到80年代初，计算机网络蓬勃发展，各种各样的计算机网络应运而生，如MILNET、USENET、BITNET、CSNET等，在网络的规模
+                和数量上都得到了很大的发展。一系列网络的建设，产生了不同网络之间互联的需求，并最终导致了
+                <mark>TCP/IP协议</mark>
+                的诞生。
+            </article>
+        </div>
         <div class="clear"></div>
     </div>
     <div id="footer">
         <a href="1.html">发表评论</a>
+
         <p>&copyCopyright W3c.com.cn <!-- #BeginDate format:IS1 -->2015-09-16<!-- #EndDate --></p>
     </div>
 </div>
