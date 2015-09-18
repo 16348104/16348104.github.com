@@ -7,26 +7,27 @@
         * {
             margin: 0px;
             padding: 0px;
-
         }
         body {
             font-size:16px;
             font-family:Arial, Helvetica, sans-serif;
             color:#46626F;
             background-color:#f3f3f3;
-            text-align:center;margin:0px auto;
+            /*text-align:center;*/
+            margin:0px auto;
         }
         p{
             margin: 10px 5px;
+            padding: 10px;
         }
         /*p textarea {*/
             /*resize: none*/
         /*}*/
         form {
-            border: 1px;
-            dottd #AAAAAA;
+            border: 2px solid #AAAAAA;
+            border-radius: 20px;
             padding: 3px 6px 3px 6px;
-            margin: 0;
+            margin: 6px;
             font: 14px Arial;
         }
         input {
@@ -59,7 +60,7 @@
         }
         div#container
         {
-            width: 650px;
+            width: 100%;
             margin:0px auto;
             line-height:150%;
         }
@@ -68,11 +69,9 @@
 
             padding:0.5em;
             color:white;
-            background-color:gray;
+            background-color:#99bbbb;
             text-align:center;
         }
-
-
     </style>
 </head>
 <body>
@@ -80,17 +79,17 @@
     <div id="header">
         <h2 class="header">欢迎评论</h2>
     </div>
-<p>我要留言: <textarea  class="txt" value="" onclick="this.value='评价须知:好评无法修改和删除'" id=""cols="50" rows="10"></textarea></p>
-<form action="" action="" method="post">
-    上传文件: <input type="file"value="晒照片" name="img" multiple="multiple"/>
-   <p> <input type="submit" value="手机晒图" class="txt"/>限5张</p>
+    <form action="" action="" method="post">
+    <p>我要留言: <textarea  class="txt" value="" onclick="this.value='评价须知:好评无法修改和删除'" id=""cols="50" rows="10"></textarea></p>
+    <p>上传文件: <input type="file"value="晒照片" name="img" multiple="multiple"/></p>
+    <p> <input type="submit" value="手机晒图" class="txt"/>限5张</p>
     <p><input type="radio" name="name" value="公开" class="txt"/>公开</p>
     <p><input type="radio" name="name" value="匿名" class="txt"/>匿名</p>
-   <p> <input type="button"  name="" value="发表评论！" onclick="alert('感谢您的评论！')" class="btn"></p>
+    <p><input type="button"  name="" value="发表评论！" onclick="alert('感谢您的评论！')" class="btn"></p>
 </form>
     <div id="footer">
-        <p>&copyCopyright w3c.com.cn  </p>
-        <p><!-- #BeginDate format:IS1 -->2015-09-16<!-- #EndDate --></p>
+        <p>&copyCopyright w3c.com.cn
+        <!-- #BeginDate format:IS1 -->2015-09-16<!-- #EndDate --></p>
     </div>
     </div>
 </body>
