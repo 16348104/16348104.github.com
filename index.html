@@ -19,30 +19,35 @@
             text-align: center;
             margin: 1px;
         }
-        a:link,a:visited {
-            color: #ffff99;
+
+        a:link, a:visited {
+            /* 超链接正常状态、被访问过的样式 */
+            color: #46626F;
             padding: 4px 10px 4px 10px;
-            background-color: #A62020;
+            background-color: #f2f8ff;
             text-decoration: none;
-            border-top: 1px solid #EEEEEE;
+            border-top: 1px solid #EEEEEE; /* 边框实现阴影效果 */
             border-left: 1px solid #EEEEEE;
-            border-right:1px solid #717171;
-            border-bottom:1px solid #717171;
+            border-bottom: 1px solid #717171;
+            border-right: 1px solid #717171;
         }
 
-        /*a:visited {*/
-            /*color: #000000;*/
-            /*text-decoration: none; /!* 无下划线 *!/*/
-        /*}*/
-
         a:hover {
-
-            text-decoration: none;
-            color: #ff5a5a;
+            /* 鼠标经过时的超链接 */
+            color: #ff5a5a; /* 改变文字颜色 */
+            padding: 5px 8px 3px 12px; /* 改变文字位置 */
+            background-color: #fff9fc; /* 改变背景色 */
+            border-top: 1px solid #717171; /* 边框变换，实现“按下去”的效果 */
+            border-left: 1px solid #717171;
+            border-bottom: 1px solid #EEEEEE;
+            border-right: 1px solid #EEEEEE;
         }
 
         img {
-            float: left;
+            /*float: left;*/
+            border: 0px;
+            margin: 10px;
+            padding: 6px;
         }
 
         ul {
@@ -53,7 +58,16 @@
 
         h2 {
             text-shadow: gray 5px 5px 2px;
+            text-align: center;
+            margin: 5px;
+
         }
+         /*h3{*/
+            /*background-color:#a5d1ff;*/
+            /*border:1px  #222222;*/
+            /*/!*clear:left;*!/*/
+        /*}*/
+
 
         summary {
             font-family: Arial, sans-serif;
@@ -68,8 +82,24 @@
             clear: both;
         }
 
+        .block1 {
+            padding-left: 10px;
+            margin-right: 10px;
+            float: left;
+        }
+        /*.block2{*/
+            /*/!*padding-left: 10px;*!/*/
+            /*/!*margin-right: 10px;*!/*/
+            /*float: left;*/
+        /*}*/
+
+        .block2 {
+            padding-right: 10px;
+            margin-left: 10px;
+            float: right;
+        }
         div#container {
-            width: 100%;
+            width: 800px;
             margin: 0px auto;
             line-height: 150%;
         }
@@ -79,43 +109,47 @@
             color: white;
             background-color: #99bbbb;
             text-align: center;
+            height: 60px;
 
         }
 
         div#footer {
+            height: 80px;
             padding: 0.5em;
             color: white;
             background-color: #99bbbb;
             text-align: center;
+            clear: both;
 
         }
 
         h1.header {
             padding: 0;
+        }
+
+        div#content {
+            background: white;
+            margin: 0 auto;
 
         }
 
         div#left {
             float: left;
             width: 200px;
-            height: 350px;
-            padding: 1em;
+            height: 600px;
+            padding: 0px;
+            margin: 0 auto;
             background-color: #ffff99;
             text-align: left;
         }
 
         div#right {
             float: left;
-            width: 450px;
-            height: 350px;
-            padding: 1em;
+            margin: 0 auto;
+            width: 600px;
+            height: 600px;
+            padding: 0;
             background-color: #EEEEEE;
-        }
-
-        div#content {
-            background: white;
-            width: 900px;
-
         }
     </style>
 </head>
@@ -147,19 +181,22 @@
             </details>
         </div>
         <div id="right">
-            <img src="images/cup.gif" width="128" ; height="128"/>
-
             <h2>浅谈互联网发展的起源</h2>
             <article>
+                <div class="block1"><img src="images/3.jpg" alt=""/></div>
                 <h3>第1阶段</h3>
-                1969年，为了保障通信联络，美国国防部高级研究计划署ARPA资助建立了世界上第一个分组交换试验网ARPANET，连接美国四个大学。
-                <mark>ARPANET</mark>
-                的建成和不断发展标志着计算机网络发展的新纪元。
+                    <div >
+                        1969年，为了保障通信联络，美国国防部高级研究计划署ARPA资助建立了世界上第一个分组交换试验网ARPANET，连接美国四个大学。
+                    <mark>ARPANET</mark>
+                    的建成和不断发展标志着计算机网络发展的新纪元。
+                </div>
+                <div class="block2"><img src="images/2.jpg"></div>
                 <h3>第2阶段</h3>
-                20世纪70年代末到80年代初，计算机网络蓬勃发展，各种各样的计算机网络应运而生，如MILNET、USENET、BITNET、CSNET等，在网络的规模
-                和数量上都得到了很大的发展。一系列网络的建设，产生了不同网络之间互联的需求，并最终导致了
-                <mark>TCP/IP协议</mark>
-                的诞生。
+                <div>20世纪70年代末到80年代初，计算机网络蓬勃发展，各种各样的计算机网络应运而生，如MILNET、USENET、BITNET、CSNET等，在网络的规模
+                    和数量上都得到了很大的发展。一系列网络的建设，产生了不同网络之间互联的需求，并最终导致了
+                    <mark>TCP/IP协议</mark>
+                    的诞生。
+                </div>
             </article>
         </div>
         <div class="clear"></div>
