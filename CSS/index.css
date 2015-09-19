@@ -12,7 +12,7 @@ body {
 a {
     font-family: Arial;
     text-align: center;
-    margin: 1px;
+    margin: 5px;
 }
 
 a:link, a:visited {
@@ -94,7 +94,7 @@ summary {
     float: right;
 }
 div#container {
-    width: 800px;
+    width: 100%;
     margin: 0px auto;
     line-height: 150%;
 }
@@ -130,10 +130,10 @@ div#content {
 
 div#left {
     float: left;
-    width: 200px;
+    width: 400px;
     height: 600px;
     padding: 0px;
-    margin: 0 auto;
+    margin: 0 10px;
     background-color: #ffff99;
     text-align: left;
 }
@@ -141,7 +141,7 @@ div#left {
 div#right {
     float: left;
     margin: 0 auto;
-    width: 600px;
+    width: 700px;
     height: 600px;
     padding: 0;
     background-color: #EEEEEE;
