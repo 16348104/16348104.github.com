@@ -8,10 +8,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: #46626F;
 }
-p {
-    link-height:18px
-}
 
+p {
+    link-height: 18px
+}
 
 a {
     font-family: Arial;
@@ -55,6 +55,7 @@ ul {
     margin: 0;
     padding: 0;
 }
+
 h2 {
     text-shadow: gray 5px 5px 2px;
     text-align: center;
@@ -77,19 +78,21 @@ summary {
     clear: both;
 }
 
-#container, #header, #footer, #content{
+#container, #header, #footer, #content {
     width: 760px;
     margin: 0px auto;
     line-height: 150%;
 }
+
 #header {
     padding: 0.3em;
     color: white;
     background-color: #99bbbb;
     text-align: center;
-    height:70px;
-    line-height:70px
+    height: 70px;
+    line-height: 70px
 }
+
 #footer {
     height: 80px;
     padding: 0.5em;
@@ -98,6 +101,7 @@ summary {
     text-align: center;
     clear: both;
 }
+
 h1.header {
     padding: 0;
 }
@@ -116,6 +120,7 @@ h1.header {
     background-color: #ffff99;
     text-align: left;
 }
+
 #side {
     float: left;
     width: 200px;
@@ -130,24 +135,24 @@ h1.header {
     position: relative;
     width: 360px;
 }
+
 #up {
-    /*padding-left: 10px;*/
-    /*margin-right: 10px;*/
+
     position: absolute;
-    /*top:0;*/
-    /*left:0;*/
+
 }
+
 #down {
-    /*padding-right: 10px;*/
-    /*margin-left: 10px;*/
+
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 0;
 }
-.left{
+
+.left {
     float: left;
 }
 
 .right {
-    float:right;
+    float: right;
 }
