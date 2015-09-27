@@ -8,6 +8,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: #46626F;
 }
+p {
+    link-height:18px
+}
+
 
 p {
     link-height: 18px
@@ -55,7 +59,6 @@ ul {
     margin: 0;
     padding: 0;
 }
-
 h2 {
     text-shadow: gray 5px 5px 2px;
     text-align: center;
@@ -95,8 +98,46 @@ summary {
 
 #footer {
     height: 80px;
+#up {
+    /*padding-left: 10px;*/
+    /*margin-right: 10px;*/
+    position: absolute;
+    /*top:0;*/
+    /*left:0;*/
+}
+#down {
+    /*padding-right: 10px;*/
+    /*margin-left: 10px;*/
+    position: absolute;
+    top:50%;
+    left: 0;
+}
+.left{
+    float: left;
+}
+
+.right {
+    float:right;
+}
+
+#container {
+    width: 100%;
+    margin: 0px auto;
+    line-height: 150%;
+}
+#header {
     padding: 0.5em;
     color: white;
+    background-color: #99bbbb;
+    text-align: center;
+    height: 80px;
+
+}
+#footer {
+    height: 90px;
+    padding: 0.5em;
+    color: white;
+    /*link-height:45px*/
     background-color: #99bbbb;
     text-align: center;
     clear: both;
@@ -121,10 +162,12 @@ h1.header {
     text-align: left;
 }
 
+
 #side {
     float: left;
     width: 200px;
 }
+
 
 #right {
     background-color: #EEEEEE;
@@ -133,6 +176,7 @@ h1.header {
     height: 600px;
     padding: 0;
     position: relative;
+
     width: 360px;
 }
 
@@ -156,3 +200,4 @@ h1.header {
 .right {
     float: right;
 }
+
