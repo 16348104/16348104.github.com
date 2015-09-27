@@ -7,7 +7,7 @@ body {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     color: #46626F;
-}
+    }
 p {
     link-height:18px
 }
@@ -98,6 +98,8 @@ summary {
 
 #footer {
     height: 80px;
+}
+
 #up {
     /*padding-left: 10px;*/
     /*margin-right: 10px;*/
@@ -157,7 +159,7 @@ h1.header {
     width: 200px;
     height: 600px;
     padding: 0px;
-    margin: 0 1px;
+    /*margin: 0 1px;*/
     background-color: #ffff99;
     text-align: left;
 }
@@ -165,25 +167,37 @@ h1.header {
 
 #side {
     float: left;
+    background-color: #F1F5F8;
     width: 200px;
 }
+.avatar {
+    background: #FFF  scroll ;
+    margin:  2px auto;
+    width: 70px;
+    height: 70px;
 
-
+   /*float: right;*/
+}
+#side .avatar img {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 5px 0 0 5px;
+}
+#side h3{
+    text-align: center;
+}
 #right {
     background-color: #EEEEEE;
     float: left;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     height: 600px;
-    padding: 0;
     position: relative;
-
     width: 360px;
 }
 
 #up {
-
     position: absolute;
-
 }
 
 #down {
