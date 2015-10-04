@@ -18,20 +18,22 @@
 
 #d1 {
     /*margin: 0;/!*“‘margin∂®Œª*!/*/
-    border: solid 1px ;
+    border: solid 1px;
     background: #ffff99;
-    position:absolute;
-    left: 0;
-    top: 0;
+    position: absolute;
+    left: 200px;
+    top: 50px;
+    z-index: 9;
 }
 
 #d2 {
-    background:none;
+    background: none;
     border: dashed 1px;
-    position:relative;
+    position: relative;
+    z-index: 1;
 }
 
 #d3 {
     border: groove 1px;
-    background:#ff5a5a;
+    background: #ff5a5a;
 }

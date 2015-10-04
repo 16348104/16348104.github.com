@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#d1,
+#d2,
+#d3 {
+    display: inline;
+}
+
+#s1,
+#s2,
+#s3 {
+    display: block;
+}
+
+#d4,
+#s4 {
+    /*display: none;*/
+    visibility: hidden;/*保留位置不显示*/
+}
