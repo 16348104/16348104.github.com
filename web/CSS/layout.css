@@ -1,0 +1,45 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.clear {
+    clear: both;
+}
+body{
+    background: #bbbaba;
+}
+#wrapper {
+    width: 1000px;
+    /*height: 800px;*/
+    margin: auto 0;
+}
+
+#content {
+    /*width: 1000px;*/
+    /*height: 700px;*/
+}
+
+#header {
+
+    height: 90px;
+    background: #e0a0ff;
+}
+
+#footer {
+    height: 90px;
+    background: #ADD8E6;
+}
+
+#left {
+    background:#EEEEEE;
+    width: 400px;
+    float: left;
+}
+
+#right {
+    background: #42dee6;
+    width: 600px;
+    float: left;
+
+}
