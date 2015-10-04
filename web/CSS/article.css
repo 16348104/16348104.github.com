@@ -1,0 +1,9 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+div{
+    float: left;
+    margin-right: 10px;
+    border: 1px solid;
+}

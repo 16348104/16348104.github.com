@@ -1,0 +1,29 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.clear {
+    clear: both;
+
+}
+#container{
+    margin: 50px;
+    background: #dddddd;
+    padding: 20px;
+}
+#d1 {
+    float: left;
+    background:none;
+    border: 10px dashed #369;
+}
+#d2 {
+    float: right;
+    background: #fff9fc;
+    border: 10px solid #e0a0ff;
+}
+#d3 {
+    float: left;
+    background: #42dee6;
+    border: 10px double #ffc;
+}

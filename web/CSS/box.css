@@ -1,0 +1,13 @@
+* {/*通配符 wild card 外卡 野牌*/
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    width: 500px;
+    height: 200px;
+    background: #ddd url("../image/googlelogo_color_272x92dp.png");
+    border: 10px outset #369;
+    padding: 10px 20px 30px 40px;/*上/右/下/左*/
+    margin: 100px 30px 200px 10px;/*上/右/下/左*/
+}
