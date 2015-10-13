@@ -17,7 +17,8 @@
     <style>
         body {
             padding-top: 50px;
-            padding-bottom: 40px;;
+            padding-bottom: 40px;
+            color: #5a5a5a;
         }
 
         hr {
@@ -75,7 +76,7 @@
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    data-target="#demo-navbar" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -84,23 +85,23 @@
             <a class="navbar-brand" href="#top">现代浏览器博物馆</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="demo-navbar">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">综述</a></li>
                 <li><a href="#">简述</a></li>
-                <li><a href="#">关于</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false">特点<span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Chrome</a></li>
-                        <li><a href="#">Firefox</a></li>
-                        <li><a href="#">Safari</a></li>
-                        <li><a href="#">Opera</a></li>
+                        <li><a href="#tab-list" data-tab="tab-chrome">Chrome</a></li>
+                        <li><a href="#tab-list" data-tab="tab-firefox">Firefox</a></li>
+                        <li><a href="#tab-list" data-tab="tab-safari">Safari</a></li>
+                        <li><a href="#tab-list" data-tab="tab-opera">Opera</a></li>
                         <!--<li role="separator" class="divider"></li>-->
-                        <li><a href="#">IE</a></li>
+                        <li><a href="#tab-list" data-tab="tab-ie">IE</a></li>
                         <!--<li role="separator" class="divider"></li>-->
                     </ul>
+                <li><a href="#" data-toggle="modal"data-target="#about">关于</a></li>
             </ul>
         </div>
     </div>
@@ -215,7 +216,7 @@
                   target="_blank">下载</a></p></div>
     </div>
     <hr/>
-    <ul class="nav nav-tabs" role="tablist">
+    <ul class="nav nav-tabs" role="tablist" id="tab-list">
         <li role="tab" class="active"><a href="#Chrome" role="tab" data-toggle="tab">Chrome</a></li>
         <li role="tab"><a href="#Firefox" role="tab" data-toggle="tab">Firefox</a></li>
         <li role="tab"><a href="#Safari" role="tab" data-toggle="tab">Safari</a></li>
@@ -298,12 +299,45 @@
     <footer>
         <p class="pull-right"><a href="#top">回到顶部</a></p>
 
-        <p>&copyCopyright   2015-10</p>
+        <p>&copyCopyright 2015-10</p>
     </footer>
 </div>
+<div class="modal fade" id="about">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">关于</h4>
+            </div>
+            <div class="modal-body">
+                <p>One fine body&hellip;  A rendered modal with header, body, and set of actions in the footer.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
 <script src="js/jquery-1.11.1.min.js"></script>
 <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('#ad-carousel').carousel();
+        $('#menu-nav .navbar-collapse a').click(function (e) {
+            var href = $(this).attr('href');
+            var tabId = $(this).attr('data-tab');
+            if ('#' !== href) {
+                e.preventDefault();
+                $(document).scrollTop($(href).offset().top - 70);
+                if (tabId) {
+                    $('#feature-tab a[href=#' + tabId + ']').tab('show');
+                }
+            }
+        });
+    });
+</script>
 </body>
 </html>
