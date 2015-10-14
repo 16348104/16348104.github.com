@@ -87,19 +87,16 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="demo-navbar">
             <ul class="nav navbar-nav">
+                <li><a href="#top">简述</a></li>
                 <li class="active"><a href="#">综述</a></li>
-                <li><a href="#">简述</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">特点<span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">特点<span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="#tab-list" data-tab="tab-chrome">Chrome</a></li>
-                        <li><a href="#tab-list" data-tab="tab-firefox">Firefox</a></li>
-                        <li><a href="#tab-list" data-tab="tab-safari">Safari</a></li>
-                        <li><a href="#tab-list" data-tab="tab-opera">Opera</a></li>
-                        <!--<li role="separator" class="divider"></li>-->
-                        <li><a href="#tab-list" data-tab="tab-ie">IE</a></li>
-                        <!--<li role="separator" class="divider"></li>-->
+                        <li><a href="#Chrome" data-tab="tab-chrome">Chrome</a></li>
+                        <li><a href="#Firefox" data-tab="tab-firefox">Firefox</a></li>
+                        <li><a href="#Safari" data-tab="tab-safari">Safari</a></li>
+                        <li><a href="#Opera" data-tab="tab-opera">Opera</a></li>
+                        <li><a href="#IE " data-tab="tab-ie">IE</a></li>
                     </ul>
                 <li><a href="#" data-toggle="modal"data-target="#about">关于</a></li>
             </ul>
@@ -324,18 +321,10 @@
 <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script>
-    $(function () {
-        $('#ad-carousel').carousel();
-        $('#menu-nav .navbar-collapse a').click(function (e) {
-            var href = $(this).attr('href');
-            var tabId = $(this).attr('data-tab');
-            if ('#' !== href) {
-                e.preventDefault();
-                $(document).scrollTop($(href).offset().top - 70);
-                if (tabId) {
-                    $('#feature-tab a[href=#' + tabId + ']').tab('show');
-                }
-            }
+    $(document).ready(function () {
+        $("#demo-navbar .dropdown-menu a").click(function () {
+            var href = $(this).attr("href");
+            $("#tab-list a[href='"+href+"']").tab("show");
         });
     });
 </script>
