@@ -6,7 +6,10 @@
 body {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    color: #46626F;
+    /*color: #46626F;*/
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #5a5a5a;
 }
 
 p {
@@ -99,11 +102,13 @@ hr {
     background-color: #99bbbb;
     text-align: center;
     height: 70px;
-    line-height: 70px
+    line-height: 70px;
 }
 
 #footer {
     height: 80px;
+    text-align: center;
+    line-height: 40px;
 }
 
 #up {
