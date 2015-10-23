@@ -7,7 +7,7 @@ public class E3 {
 
     public static void main(String[] args) {
         int i, j, k, n;
-        for (n = 100; n < 1000; n++) {
+        for (n = 100; n < 999; n++) {
             i = n / 100;                /*分解出百位*/
             j = n / 10 % 10;            /*分解出十位*/
             k = n % 10;                 /*分解出个位*/
