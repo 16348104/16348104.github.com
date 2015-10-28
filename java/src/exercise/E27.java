@@ -15,7 +15,8 @@ public class E27 {
                 }
             }
             if (b) {
-                System.out.print(i+" ");
+
+                System.out.print(i + " ");
             }
         }
 
