@@ -2,16 +2,14 @@ package inherited;
 
 /**
  * Created by dell on 2015/10/29.
-
-
  */
 public class Father {
 
     int i;
 
     void test() {
-       System.out.println("test method in father class...");
-        i ++;
+        System.out.println("test method in father class...");
+        i++;
     }
 }
 
@@ -26,7 +24,8 @@ class Son extends Father {
         System.out.println("in son constructor...");
     }
 
-       @Override// 注解
+    @Override
+// 注解
     void test() {
         int j = i;
         super.test();
