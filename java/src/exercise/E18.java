@@ -1,4 +1,4 @@
-package exercise;
+  package exercise;
 
 /**
  * Created by dell on 2015/10/28.
@@ -6,4 +6,7 @@ package exercise;
  * 有人向队员打听比赛的名单。a说他不和x比，c说他不和x，z比，请编程序找出三队赛手的名单。
  */
 public class E18 {
+    //a--z
+//c--y
+//b--x
 }
