@@ -18,5 +18,8 @@ public class Car extends Vehicle {
         System.out.println(c.running());
         System.out.println(c.oil);
         System.out.println(c.didi());
+        System.out.println(c instanceof Vehicle);//c是vehicle的子类吗？
+
+
     }
 }
