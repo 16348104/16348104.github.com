@@ -5,10 +5,10 @@ package abst;
  */
 public class ShapeTest {
 
-//        Shape s = new Square(1.0);
+//        Shape s = new Square(1.0); ?
     public static void main(String[] args) {
         Shape s = new Square(5.0);
-        Shape r= new Rectangle(4,3);
+        Shape r= new Rectangle(4,3);//?
         System.out.println(s.Area());
         System.out.println(s.Periemter());
         System.out.println(r.Area());
