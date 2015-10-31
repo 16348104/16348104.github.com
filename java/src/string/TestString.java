@@ -10,10 +10,11 @@ public class TestString {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String str = scanner.nextLine();
+//        String str = "abc";
         char[] c = str.toCharArray();
-        for (int i = 0; i <c.length ; i++) {
-            if(c[i]>='a'&&c[i]<='z') {
-                c[i] += 32;
+        for (int i = 0; i < c.length; i++) {
+            if (c[i] >= 'a' && c[i] <= 'z') {
+                c[i] -= 32;
             }
         }
         System.out.println(new String(c));
