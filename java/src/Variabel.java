@@ -10,27 +10,27 @@ public class Variabel {
     public static void m(int k) {
 
         int i = 100;
-        System.out.println(i);
+        System.out.println("i:"+i);
         int j = 0;
-        System.out.println(j);
-        System.out.println(k);
+        System.out.println("j:"+j);
+        System.out.println("k:"+k);
         test();
 //        int l = 10;
         for (int l = 0; l < 10; l++) {
             for (int m = 0; m < 100; m++) {
-                System.out.println(m);
+                System.out.println("m:"+m);
             }
 //            System.out.println(m);
         }
 
 
         for (int l = 0; l < 10; l++) {
-            System.out.println(l);
+            System.out.println("l:"+l);
         }
     }
 
     public static void test() {
-        System.out.println(i);
+        System.out.println("i:"+i);
 //        System.out.println(j);
 //        m(1);
     }
