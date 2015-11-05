@@ -11,7 +11,7 @@ public class StaticTest {
 
     public static void m2() {
 
-              m1();
+        m1();
     }
 
     public StaticTest(String name, int age) {//alt+insert
