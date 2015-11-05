@@ -8,13 +8,18 @@ import com.sun.org.apache.xpath.internal.SourceTree;
 public class ExceptionTest {
     public static void main(String[] args) {
         String[] sr = new String[10];
+        int x = 1;
+        int y = 0;
         try {
+            System.out.println(x / y);
+            System.out.println(sr[11]);
+            System.out.println("hi");
+        } catch (ArrayIndexOutOfBoundsException e) {
 
-        System.out.println(sr[11]);
-        }catch (ArrayIndexOutOfBoundsException e){
-
+        } catch (ArithmeticException e) {
+        } finally {
+            System.out.println("hello");
         }
-        System.out.println("hello");
     }
 
 }
