@@ -17,14 +17,19 @@ public class E34 {
     public static void main(String[] args) {
         Hashtable<Integer, Integer> has = new Hashtable<>();
         for (int i = 0; i < 20; i++) {
-            has.put(i = 1, 0);
+            has.put(i + 1, 0);
         }
         long s1 = System.currentTimeMillis();
         for (int i = 0; i < 10000; i++) {
-            int a;
-            a = (int) (1 + Math.random() * 20);
+
+           int a = (int) (1 + Math.random() * 20);
             System.out.print(a + " ");
-            has.put(a, has.get(a)+1);
+            has.put(a, has.get(a) + 1);
+
+        }
+
+        for (Integer i : has.keySet()) {
+            System.out.println(i + "-->" + has.get(i));
         }
         System.out.println();
         System.out.println("time:" + (System.currentTimeMillis() - s1));
