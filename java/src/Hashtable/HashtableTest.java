@@ -10,12 +10,19 @@ public class HashtableTest<I, I1> {
 
         Hashtable<Integer, String> num = new Hashtable<>();
         num.put(1, "a");
-        num.put(1, "b");
-        num.put(1, "c");
-        num.put(1, "d");
-        num.put(1, "e");
+        num.put(2, "b");
+        num.put(3, "c");
+        num.put(4, "d");
+        num.put(4, "e");
+
+        System.out.println(num.size());
+        System.out.println(num.get(1));
+        System.out.println(num.keySet());
+        for (Integer i : num.keySet()) {//for-each 循环 iter + Tab
+            System.out.println();
+        }
         for (Integer integer : num.keySet()) {
-            System.out.println(num.keySet()+"-->"+num.get(integer));
+            System.out.println(integer + "-->" + num.get(integer));
         }
 
     }
