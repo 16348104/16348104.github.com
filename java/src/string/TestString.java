@@ -19,9 +19,12 @@ public class TestString {
         }
         System.out.println(new String(c));
         String[] strings = {"a", "bc", "def"};
-//        for (int i = 0; i < strings.length; i++) {
-//            System.out.println(strings[i]);
-//        }
+        for (int i = 0; i < strings.length; i++) {
+            System.out.println(strings[i]);
+        }
+        for (String s : strings) {
+            System.out.println(s);
+        }
 //        for (String string : strings) {// 迭代 循环
 //            System.out.println(string);
 //        }
