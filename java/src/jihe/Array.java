@@ -1,3 +1,5 @@
+package jihe;
+
 /**
  * Created by xdx on 2015/11/6.
  */

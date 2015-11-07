@@ -1,3 +1,5 @@
+package jihe;
+
 import java.util.Vector;
 
 /**
