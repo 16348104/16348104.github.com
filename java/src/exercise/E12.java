@@ -12,12 +12,11 @@ import java.util.Scanner;
 public class E12 {
 
     public static void main(String[] args) {
-
+        double sum = 0;
         System.out.println("请输入利润：");
 
         Scanner s = new Scanner(System.in);
         double i = s.nextDouble();
-        double sum = 0;
         if (i <= 100000) {
             sum = i * 0.1;
         }
@@ -36,6 +35,6 @@ public class E12 {
         if (i > 100000) {
             sum += (i - 100000) * 0.01;
         }
-        System.out.print("应发放奖金总额："+sum);
+        System.out.print("应发放奖金总额：" + sum);
     }
 }
