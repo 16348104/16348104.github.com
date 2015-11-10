@@ -1,4 +1,4 @@
-package jihe;
+package collection;
 
 /**
  * Created by xdx on 2015/11/6.

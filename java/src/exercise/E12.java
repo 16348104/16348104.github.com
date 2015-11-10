@@ -12,28 +12,30 @@ import java.util.Scanner;
 public class E12 {
 
     public static void main(String[] args) {
-        double sum = 0;
+        double sum = 0.0;
         System.out.println("请输入利润：");
 
         Scanner s = new Scanner(System.in);
-        double i = s.nextDouble();
+
+        double i = s.nextInt();
         if (i <= 100000) {
             sum = i * 0.1;
-        }
-        if ((i > 100000) && (i < 200000)) {
-            sum += (i - 10000) * 0.075;
-        }
-        if ((i >= 200000) && (i < 400000)) {
-            sum += sum + (i - 200000) * 0.05;
-        }
-        if ((i >= 400000) && (i < 600000)) {
+        } else if ((i > 100000) && (i < 200000)) {
+            sum = 100000 * 0.1;
+            sum += (i - 100000) * 0.075;
+        } else if ((i >= 200000) && (i < 400000)) {
+            sum = 100000 * 0.1;
+            sum += 0.075 * (i - 100000);
+            sum += (i - 200000) * 0.05;
+        } else if ((i >= 400000) && (i < 600000)) {
+            sum = 10000;
+            sum += (i - 100000) * 0.075;
+            sum += (i - 200000) * 0.05;
             sum += (i - 400000) * 0.03;
-        }
-        if ((i >= 600000) && (i < 1000000)) {
-            sum += (i - 60000) * 0.015;
-        }
-        if (i > 100000) {
-            sum += (i - 100000) * 0.01;
+        } else if ((i >= 600000) && (i < 1000000)) {
+            sum += (i - 600000) * 0.015;
+        } else {
+            sum += (i - 1000000) * 0.01;
         }
         System.out.print("应发放奖金总额：" + sum);
     }

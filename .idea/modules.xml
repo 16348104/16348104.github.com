@@ -3,8 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/16348104.github.com.iml" filepath="$PROJECT_DIR$/16348104.github.com.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JS/JS.iml" filepath="$PROJECT_DIR$/JS/JS.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jQuery/jQuery.iml" filepath="$PROJECT_DIR$/jQuery/jQuery.iml" />
       <module fileurl="file://$PROJECT_DIR$/java/java.iml" filepath="$PROJECT_DIR$/java/java.iml" />
     </modules>
   </component>
