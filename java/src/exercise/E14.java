@@ -57,17 +57,17 @@ public class E14 {
                 sum = 334;
                 break;
             default:
-                System.out.println(" error");
+                System.out.println("error");
                 break;
         }
-        sum = sum + day; /*再加上某天的天数*/
+        sum += day; /*再加上某天的天数*/
         if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0))/*判断是不是闰年*/
-            leap = 1;
+        {leap = 1;}
         else
-            leap = 0;
+        { leap = 0;}
         if (leap == 1 && month > 2)/*如果是闰年且月份大于2,总天数应该加一天*/
             sum++;
-        System.out.println("It is the the day:" + sum);
+        System.out.println("今天是这一年的第" + sum+"天。");
     }
 }
 
