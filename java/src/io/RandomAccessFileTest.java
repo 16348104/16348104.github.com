@@ -14,6 +14,7 @@ public class RandomAccessFileTest {
             randomAccessFile = new RandomAccessFile("java/src/io/rat.txt", "rw");
             for (int i = 0; i < 10; i++) {
                 randomAccessFile.write(i);
+//                System.out.print(randomAccessFile.readInt());
             }
         } catch (java.io.IOException e) {
             e.printStackTrace();
