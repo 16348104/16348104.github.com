@@ -15,7 +15,7 @@ public class RandomAccessFileTest {
             for (int i = 0; i < 10; i++) {
                 randomAccessFile.writeInt(i);
             }
-//            randomAccessFile.seek(1);
+//            randomAccessFile.seek(1);?
 //            randomAccessFile.writeDouble(12.34);
             randomAccessFile = new RandomAccessFile("java/src/io/rat.txt", "r");
             for (int i = 0; i <10; i++) {
