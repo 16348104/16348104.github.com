@@ -1,3 +1,7 @@
+package oop;
+
+import oop.Human;
+
 /**
  * Created by Administrator on 2015/10/24.
  */
