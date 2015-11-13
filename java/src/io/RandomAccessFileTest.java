@@ -13,8 +13,14 @@ public class RandomAccessFileTest {
         try {
             randomAccessFile = new RandomAccessFile("java/src/io/rat.txt", "rw");
             for (int i = 0; i < 10; i++) {
-                randomAccessFile.write(i);
-//                System.out.print(randomAccessFile.readInt());
+                randomAccessFile.writeInt(i);
+            }
+//            randomAccessFile.seek(1);
+//            randomAccessFile.writeDouble(12.34);
+            randomAccessFile = new RandomAccessFile("java/src/io/rat.txt", "r");
+            for (int i = 0; i <10; i++) {
+                System.out.println("val: "+randomAccessFile.readInt());
+
             }
         } catch (java.io.IOException e) {
             e.printStackTrace();
