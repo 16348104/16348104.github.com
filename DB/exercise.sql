@@ -1,11 +1,35 @@
 # 1、查找部门30中员工的详细信息。
+SELECT *
+FROM emp where DEPTNO=30;
 # 2、找出从事clerk工作的员工的编号、姓名、部门号。
+SELECT
+  EMPNO,
+  ENAME,
+  DEPTNO
+FROM emp
+WHERE JOB = 'clerk';
+
 # 3、检索出奖金多于基本工资的员工信息。
-# 4、检索出奖金多于基本工资60%的员工信息。
+SELECT *
+FROM emp
+WHERE COMM > SAL;
+
+# 4、检索出奖金多于基本工资20%的员工信息。
+SELECT *
+FROM emp
+WHERE COMM > SAL * 0.3;
+
 # 5、希望看到10部门的经理或者20部门的职员(clerk)的信息。
-# 6、找出10部门的经理、20部门的职员或者既不是经理也不是职员但是工资高于2000元的员工信息。
+SELECT *
+FROM emp
+WHERE (EMPNO=10 AND JOB='MANAGER' )OR (EMPNO=20 AND JOB='clerk');
+# 6、找出10部门的经理、20部门的职员或者既不是经理也不是职员但是工资(基本工资 + 奖金)高于2000元的员工信息。
+
 # 7、找出获得奖金的员工的工作。
+SELECT  DISTINCT JOB FROM emp WHERE COMM<>0;
 # 8、找出奖金少于100或者没有获得奖金的员工的信息。
+SELECT *
+FROM emp WHERE COMM<100 OR COMM is null;
 # 9、查找员工雇佣日期中当月的最后一天雇佣的。
 # 10、检索出雇佣年限超过12年的员工信息。
 # 11、找出姓名以A、B、S开始的员工信息。
