@@ -11,7 +11,7 @@ public class Compute<T extends Object & Serializable & Comparable, S> {
     }
 
     public static void main(String[] args) {
-        Compute<Double, Boolean> co = new Compute<>();
+        Compute<Double, Boolean> co = new Compute<Double, Boolean>();
 //        Compute <Integer>co= new Compute<>();
 
         System.out.println(co.add(2.5, false));
