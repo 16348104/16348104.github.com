@@ -15,6 +15,6 @@ class Test<T> implements GenericInterface<T> {
 
     public static void main(String[] args) {
         Test<Double> test;
-        test = new Test<>();
+        test = new Test<Double>();
     }
 }
