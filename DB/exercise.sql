@@ -24,7 +24,9 @@ SELECT *
 FROM emp
 WHERE (EMPNO=10 AND JOB='MANAGER' )OR (EMPNO=20 AND JOB='clerk');
 # 6、找出10部门的经理、20部门的职员或者既不是经理也不是职员但是工资(基本工资 + 奖金)高于2000元的员工信息。
-
+SELECT *
+FROM emp
+where (EMPNO=10)or(EMPNO=20)
 # 7、找出获得奖金的员工的工作。
 SELECT  DISTINCT JOB FROM emp WHERE COMM<>0;
 # 8、找出奖金少于100或者没有获得奖金的员工的信息。
