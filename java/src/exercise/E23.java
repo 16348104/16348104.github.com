@@ -7,7 +7,7 @@ package exercise;
  * 请问第五个人多大？
  */
 public class E23 {
-    int GetAge(int n) {
+    static int GetAge(int n) {
         if (n==1){
             return 10;
         }
@@ -15,7 +15,7 @@ public class E23 {
 
     }
     public static void main(String[] args) {
-        System.out.println("年龄为："+GetAge(5));
+        System.out.print("第五个人年龄为："+GetAge(5));
 
     }
 }
