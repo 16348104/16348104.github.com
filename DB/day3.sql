@@ -46,6 +46,8 @@ CREATE TABLE demo3.student (
 );
 ALTER TABLE demo3.student
 ADD CONSTRAINT fk_stu_id FOREIGN KEY (dept_id) REFERENCES demo3.dept (id);
+
 INSERT INTO demo3.dept VALUES (NULL, 'EE');
 INSERT INTO demo3.dept VALUES (NULL, 'CS');
 INSERT INTO demo3.dept VALUES (NULL, 'SS');
+
