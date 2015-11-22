@@ -38,4 +38,15 @@ CREATE TABLE demo4.example (
   web        VARCHAR(255) COMMENT '网站'
 
   COMMENT '例句表'
-)
+);
+
+
+DROP TABLE IF EXISTS demo4.tes;
+CREATE TABLE demo4.tes
+(t LONGTEXT COMMENT 'test'
+);
+SHOW FULL COLUMNS FROM demo4.tes;
+
+INSERT INTO demo4.tes VALUES ('qwertyu');
+SELECT *
+FROM demo4.tes;
