@@ -47,3 +47,10 @@ CREATE TABLE demo4.example (
 SHOW FULL COLUMNS FROM demo4.example;
 
 # alter TABLE MODIFY
+CREATE TABLE demo4.test
+(
+   i TEXT COMMENT 'test'
+);
+INSERT INTO demo4.test VALUES ('ghghg');
+SELECT *
+FROM demo4.test;

@@ -67,3 +67,6 @@ CHANGE name Sname VARCHAR(255);
 
 DESC demo3.student;
 
+SELECT Sname name
+FROM demo3.student s , demo3.dept d
+WHERE demo3.dept.id=demo3.
