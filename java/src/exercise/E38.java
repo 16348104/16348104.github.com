@@ -15,6 +15,6 @@ public class E38 {
         System.out.println("请输入一串字符：");
         Scanner scanner = new Scanner(System.in);
         String str = scanner.next();
-        System.out.println(m(str));
+        System.out.println("字符串长度是："+m(str));
     }
 }
