@@ -2,51 +2,47 @@ DROP DATABASE IF EXISTS demo4;
 CREATE DATABASE demo4;
 DROP TABLE IF EXISTS demo4.word;
 CREATE TABLE demo4.word (
-  word_id    SMALLINT(8) UNIQUE AUTO_INCREMENT PRIMARY KEY
+  word_id    INT UNSIGNED AUTO_INCREMENT PRIMARY KEY
   COMMENT '词汇编号',
-  vocabulary TEXT(255) NOT NULL
+  vocabulary TEXT NOT NULL
   COMMENT '词汇',
   ipa_uk     VARCHAR(255) COMMENT '英语音标',
   ipa_us     VARCHAR(255) COMMENT '美语音标'
 
 )
   COMMENT '单词表';
-ALTER TABLE demo4.word
-ADD english VARCHAR(255);
 SHOW FULL COLUMNS FROM demo4.word;
+
+
+
 
 DROP TABLE IF EXISTS demo4.character;
 CREATE TABLE demo4.character (
-  id           INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY
+  id             INT UNSIGNED AUTO_INCREMENT PRIMARY KEY
   COMMENT '主键id',
-  character_id SMALLINT(8) UNIQUE
+  character_id   INT UNSIGNED
   COMMENT '词性标号',
-  CONSTRAINT fk_ch_word_id FOREIGN KEY (character_id) REFERENCES demo4.word (word_id),
-  explain      TEXT COMMENT '词汇解释'
+  chinese        TEXT COMMENT '词汇中文解释',
+  part_of_speach VARCHAR(255) COMMENT '发音'
+)
+  COMMENT '词性表';
 
-  COMMENT '词性表'
-);
+ALTER TABLE demo4.character
+ADD CONSTRAINT fk_char_word FOREIGN KEY (character_id) REFERENCES demo4.word (word_id);
+SHOW FULL COLUMNS FROM demo4.character;
+
+
 DROP TABLE IF EXISTS demo4.example;
 CREATE TABLE demo4.example (
-  id         INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY
+  id               INT UNSIGNED AUTO_INCREMENT PRIMARY KEY
   COMMENT '主键id',
-  example_id SMALLINT(8) UNIQUE
-  COMMENT '例句号',
-  CONSTRAINT fk_ex_id FOREIGN KEY (example_id) REFERENCES demo4.character (id),
-  Chinese    TEXT(255) COMMENT '中文例句',
-  English    TEXT(255) COMMENT '英语例句',
-  web        VARCHAR(255) COMMENT '网站'
-
-  COMMENT '例句表'
-);
-
-
-DROP TABLE IF EXISTS demo4.tes;
-CREATE TABLE demo4.tes
-(t LONGTEXT COMMENT 'test'
-);
-SHOW FULL COLUMNS FROM demo4.tes;
-
-INSERT INTO demo4.tes VALUES ('qwertyu');
-SELECT *
-FROM demo4.tes;
+  example_id       INT UNSIGNED
+  COMMENT '例句表号',
+  chinese_sentence TEXT COMMENT '中文例句',
+  english_sentence TEXT COMMENT '英语例句',
+  web_origin       VARCHAR(255) COMMENT '网站来源'
+)
+  COMMENT '例句表';
+ALTER TABLE demo4.example
+ADD CONSTRAINT fk_exa_ex FOREIGN KEY (example_id) REFERENCES demo4.character (id);
+SHOW FULL COLUMNS FROM demo4.example;
