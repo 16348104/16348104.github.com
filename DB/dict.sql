@@ -52,7 +52,7 @@ CREATE TABLE demo4.root (
   id               INT UNSIGNED AUTO_INCREMENT
   COMMENT '主键id',
   root_id       INT UNSIGNED
-  COMMENT '例句表号',
+  COMMENT '单词表号',
   prefix TEXT COMMENT '前缀',
   suffix TEXT COMMENT '后缀',
   chinese       VARCHAR(255) COMMENT '中文意思',
