@@ -59,6 +59,8 @@ WHERE HIREDATE = last_day(HIREDATE);
 # 23、至今为止，员工被雇佣的天数。
 # 24、找出姓名中包含A的员工信息。
 # 25、计算出员工被雇佣了多少年、多少月、多少日。
+SELECT
+FROM emp;
 # PART II
 # 1. 返回拥有员工的部门名、部门号。
 SELECT DEPTNO,
