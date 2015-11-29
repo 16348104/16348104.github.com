@@ -12,13 +12,16 @@
 </head>
 <body>
 <%
-  String name = request.getParameter("name1");
+  String name;
+  name = request.getParameter("name1");
   String password = request.getParameter("pass");
 //  String email = request.getParameterValues("email");
   out.println(name+password);
+
   out.println();
 %>
-
-<%=getServletInfo()%>
 </body>
 </html>
+<%!
+
+%>
