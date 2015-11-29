@@ -17,11 +17,7 @@
   String password = request.getParameter("pass");
 //  String email = request.getParameterValues("email");
   out.println(name+password);
-
   out.println();
 %>
 </body>
 </html>
-<%!
-
-%>
