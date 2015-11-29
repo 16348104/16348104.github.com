@@ -13,7 +13,8 @@ public class E28 {
         while (str.indexOf(str1, start) >= 0 && start < str.length()) {
             count++;
             start = str.indexOf(str1, start) + str1.length();
+
         }
-        System.out.println(str1 + "在" + str + "出现" + count+"次。");
+//        System.out.println(str1 + "在" + str + "出现" + count+"次。");
     }
 }

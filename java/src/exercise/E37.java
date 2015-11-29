@@ -11,14 +11,14 @@ public class E37 {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         System.out.println("请输入人数：");
-        boolean [] arry=new boolean arry[true];
+//        boolean [] arry=new boolean arry[true];
         int count = 0;
         int total = 0;
         int index = 0;
         while ( total>1) {
-            if() {
-                count++;
-            }
+//            if() {
+//                count++;
+//            }
 
         }
 
