@@ -17,8 +17,8 @@
 
     <p>请输入密码： <input type="password" name="pass" placeholder="密码长度至少为8位" required="required"/><br/>
 
-    <p>请输入E-mail：<input type="email" name="email" required="required" class="txt"><br/>
-        <input type="submit" value="提交"/>
+    <p>请输入E-mail：<input type="email" name="email" required="required"/>
+    <br><input type="submit" value="提交"/>
 </form>
 </body>
 </html>
