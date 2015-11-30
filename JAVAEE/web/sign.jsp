@@ -1,24 +1,24 @@
 <%--
   Created by IntelliJ IDEA.
-  User: Administrator
-  Date: 2015/11/29
-  Time: 16:16
+  User: dell
+  Date: 2015/12/1
+  Time: 1:15
   To change this template use File | Settings | File Templates.
 --%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-  <title></title>
+    <title>sign up</title>
 </head>
+
 <body>
 <form action="get.jsp" method="post">
-  username: <input name="name"><br/>
-  password: <input type="password" name="pass"><br/>
-  hometown: <select name="hometown" multiple="multiple">
-  <option value="Beijing">Beijing</option>
-  <option value="Shanghai">Shanghai</option>
-  <option value="Shenzhen">Shenzhen</option>
-</select><br/>
-  <input type="submit" value="SIGN UP"/>
+    <p>请输入用户名： <input type="text" name="name1" placeholder="请输入您的用户名" required="required"/><br/>
+
+    <p>请输入密码： <input type="password" name="pass" placeholder="密码长度至少为8位" required="required"/><br/>
+
+    <p>请输入E-mail：<input type="email" name="email" required="required" class="txt"><br/>
+        <input type="submit" value="提交"/>
 </form>
 </body>
 </html>
