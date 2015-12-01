@@ -1,5 +1,7 @@
 package exercise;
 
+import sun.org.mozilla.javascript.internal.Function;
+
 /**
  * Created by xdx on 2015/12/1.
  * 古典问题：有一对兔子，从出生后第3个月起每个月都生一对兔子，
@@ -8,7 +10,19 @@ package exercise;
  */
 public class E1 {
     public static void main(String[] args) {
-        int i;
-        System.out.println();
+        math m1 = new math();
+        for (int i = 0; i < 12; i++) {
+            System.out.println(m1.function(i));
+
+        }
+        class math {
+            public int function(int f) {
+                if (f == 1 || f == 2) {
+                    return 1;
+                } else {
+                    return function(f - 1) + function(f - 2);
+                }
+            }
+        }
     }
 }
