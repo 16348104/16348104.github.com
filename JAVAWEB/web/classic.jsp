@@ -16,7 +16,7 @@
 %>
 <html>
 <head>
-    <title>一个典型的jsp</title>
+    <title>一个典型的JSP</title>
 </head>
 <body>
 <%@include file="header.jsp" %>
