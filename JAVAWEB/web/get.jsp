@@ -9,7 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>GET</title>
+    <title>Get</title>
 </head>
 <body>
 <%
