@@ -12,17 +12,19 @@ public class E1 {
     public static void main(String[] args) {
         math m1 = new math();
         for (int i = 0; i < 12; i++) {
-            System.out.println(m1.function(i));
+            System.out.println(m1.fun(i));
+        }
+    }
 
-        }
-        class math {
-            public int function(int f) {
-                if (f == 1 || f == 2) {
-                    return 1;
-                } else {
-                    return function(f - 1) + function(f - 2);
-                }
-            }
-        }
+}
+
+class math {
+    public int fun(int f) {
+        if (f == 1 || f == 2)
+            return 1;
+        else
+            return
+                    fun(f - 1) + fun(f - 2);
+
     }
 }
