@@ -23,8 +23,7 @@ class math {
         if (f == 1 || f == 2)
             return 1;
         else
-            return
-                    fun(f - 1) + fun(f - 2);
+            return fun(f - 1) + fun(f - 2);
 
     }
 }
