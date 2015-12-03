@@ -11,6 +11,10 @@
     <title>Tomcat</title>
   </head>
   <body>
-  <h2>JSP</h2>
+ <h1>index</h1>
+  session id:<%=session.getId()%><br>
+ welcome <%= session.getAttribute("username")
+  %>
+ <a href="">log out</a>
   </body>
 </html>

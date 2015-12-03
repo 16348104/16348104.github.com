@@ -14,7 +14,7 @@
 <body>
 <%
 
-    String name = request.getParameter("name1");
+    String name = request.getParameter("username");
     String password = request.getParameter("pass");
     String email = request.getParameter("email");
     out.println(name);
