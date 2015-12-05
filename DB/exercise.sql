@@ -68,6 +68,7 @@ SELECT DISTINCT
 FROM scott.emp AS e, scott.dept AS d
 WHERE e.DEPTNO = d.DEPTNO;
 # 2. 工资水平多于smith的员工信息。
+
 # 3. 返回员工和所属经理的姓名。
 # 4. 返回雇员的雇佣日期早于其经理雇佣日期的员工及其经理姓名。
 # 5. 返回员工姓名及其所在的部门名称。
