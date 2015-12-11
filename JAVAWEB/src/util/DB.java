@@ -3,9 +3,7 @@ import java.sql.*;
 
 import com.mysql.jdbc.Driver;
 
-/**
- * Created by dell on 2015/12/9.
- */
+
 public class DB {
     private static final String url = "jdbc:mysql:///test";
     private static final String user = "root";
