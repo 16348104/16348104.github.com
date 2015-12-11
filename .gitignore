@@ -1,4 +1,7 @@
-
-*.iml
 .idea
-_book
+.gradle
+gradle
+out
+*.iml
+gradlew
+gradlew.bat
