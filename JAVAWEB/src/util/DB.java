@@ -1,8 +1,8 @@
 package util;
+
 import java.sql.*;
 
 import com.mysql.jdbc.Driver;
-
 
 public class DB {
     private static final String url = "jdbc:mysql:///test";
