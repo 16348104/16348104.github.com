@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/16348104.github.com.iml" filepath="$PROJECT_DIR$/16348104.github.com.iml" />
       <module fileurl="file://$PROJECT_DIR$/HelloServlet/HelloServlet.iml" filepath="$PROJECT_DIR$/HelloServlet/HelloServlet.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JAVAWEB/JAVAWEB1.iml" filepath="$PROJECT_DIR$/JAVAWEB/JAVAWEB1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVAWEB.iml" filepath="$PROJECT_DIR$/JAVAWEB.iml" />
       <module fileurl="file://$PROJECT_DIR$/java/java.iml" filepath="$PROJECT_DIR$/java/java.iml" />
     </modules>
   </component>
